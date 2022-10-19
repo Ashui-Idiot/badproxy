@@ -1,16 +1,12 @@
 <head>
   <script>
-   var iframe = document.createElement('iframe');       
-   document.body.appendChild(iframe);
-
-   iframe.src = 'https://google.com';       
-   iframe.width = '1300px;
-   iframe.height = '800px';
+   var iframe = document.getElementById("link")
    function updateURL() {
       iframe.src = document.getElementById("link").value
    }
   </script>
 </head>
 <body>
-  <form><input type="text" id="link"></input><input type="button" onClick="updateURL()">Change URL</input></form>
+  <form><input type="text" id="link"></input><input type="button" onClick="updateURL()"></input></form>
+<iframe src="https://zlxlr.org" width="1500px" height="800px" id="iframe"></iframe>
 </body>
