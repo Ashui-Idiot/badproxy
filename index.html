@@ -1,5 +1,12 @@
 <head>
+  <script>
+    function go() {
+      document.getElementById("iframe").contentWindow.document.location.href=document.getElementById("link").value;
+    }
+  </script>
 </head>
 <body>
+  <form><input id="link"></form>
+  <button onclick="go()">Go</button>
 <iframe src="https://zlxrlr.org" width="1500px" height="800px" id="iframe"></iframe>
 </body>
